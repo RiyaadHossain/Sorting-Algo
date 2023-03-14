@@ -1,12 +1,3 @@
-#include <iostream>
-using namespace std;
-
-void printArr(int arr[], int n)
-{
-    for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
-}
-
 void swap(int arr[], int a, int b)
 {
     int temp = arr[a];
@@ -14,7 +5,7 @@ void swap(int arr[], int a, int b)
     arr[b] = temp;
 }
 
-// 1. Selection Sort
+// Selection Sort
 void selection_sort(int arr[], int n)
 {
 
@@ -36,16 +27,4 @@ void selection_sort(int arr[], int n)
             swap(arr, min, i);
         }
     }
-}
-
-int main()
-{
-
-    int n = 5;
-    int arr[n] = {2, 5, 1, 3, 4};
-
-    selection_sort(arr, n);
-    printArr(arr, n);
-
-    return 0;
 }

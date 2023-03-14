@@ -1,10 +1,3 @@
-#include <iostream>
-using namespace std;
-
-void printArr(int arr[], int n){
-    for(int i = 0; i < n; i++) cout << arr[i] << " ";
-}
-
 void swap(int arr[], int a, int b){
      int temp = arr[a];
      arr[a] = arr[b];
@@ -26,15 +19,4 @@ void bubble_sort(int arr[], int n){
         if(!didSwap) break;
     }
     
-}
-
-int main() {
-    
-    int n = 5;
-    int arr[n] = {2, 5, 1, 3, 4};
-    
-    bubble_sort(arr, n);
-    printArr(arr, n);
-
-    return 0;
 }
